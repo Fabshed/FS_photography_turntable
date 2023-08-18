@@ -189,7 +189,7 @@ boolean clockwise = true;
 
 int speed_opt = 500; //
 int stills_opt = 20; // Number of photos to take (set to 1 in video mode)
-int angle_opt = 180; // Degrees
+int angle_opt = 360; // Degrees
 
 boolean up = false;
 boolean down = false;
@@ -328,7 +328,7 @@ void loop() {
           angle_opt -= 5;
           if (angle_opt <= 0)
           {
-            angle_opt = 360;
+            angle_opt = 720;
           }
           break;
         default:
@@ -395,7 +395,7 @@ void loop() {
           break;
         case ANGLE:
           angle_opt += 5;
-          if (angle_opt > 360)
+          if (angle_opt > 720)
           {
             angle_opt = 5;
           }
